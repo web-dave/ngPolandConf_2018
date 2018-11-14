@@ -124,7 +124,8 @@
       "prefix": "lib",
       "schematics": {
         "@schematics/angular:component": {
-          "export": true
+          "export": true,
+          "styleext": "scss"
         }
       },
       "architect": {
