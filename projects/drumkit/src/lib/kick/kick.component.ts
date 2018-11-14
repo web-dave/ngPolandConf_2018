@@ -2,8 +2,36 @@ import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
   selector: "kick",
-  templateUrl: "./kick.component.html",
-  styleUrls: ["./kick.component.scss"]
+  template: `
+    <div (click)="kick()">kick</div>
+  `,
+  styles: [
+    `
+      :host {
+        display: table-cell;
+      }
+      div {
+        border-radius: 50%;
+        top: 0rem;
+        position: absolute;
+        line-height: 50rem;
+        text-align: center;
+        font-size: 12rem;
+        height: 50rem;
+        width: 50rem;
+        margin: 2rem;
+        color: whitesmoke;
+        outline: 0;
+        background: rgb(75, 75, 73);
+        background: radial-gradient(
+          circle,
+          #131313 66%,
+          #7d7d7a 67%,
+          #2f2f2e 68%
+        );
+      }
+    `
+  ]
 })
 export class KickComponent implements OnInit {
   @Input() frequency: number = 150;

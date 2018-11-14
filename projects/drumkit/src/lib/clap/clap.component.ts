@@ -2,8 +2,34 @@ import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
   selector: "clap",
-  templateUrl: "./clap.component.html",
-  styleUrls: ["./clap.component.scss"]
+  template: `
+    <div (click)="clap()">clap</div>
+  `,
+  styles: [
+    `
+      :host {
+        display: table-cell;
+      }
+      div {
+        border-radius: 50%;
+        height: 50rem;
+        width: 50rem;
+        margin: 2rem;
+        text-align: center;
+        line-height: 50rem;
+        text-align: center;
+        font-size: 12rem;
+        outline: 0;
+        background: rgb(149, 154, 18);
+        background: radial-gradient(
+          circle,
+          rgba(149, 154, 18, 1) 0%,
+          rgba(238, 236, 20, 1) 44%,
+          rgba(179, 180, 13, 1) 47%
+        );
+      }
+    `
+  ]
 })
 export class ClapComponent implements OnInit {
   @Input() frequency: number = 1000;
