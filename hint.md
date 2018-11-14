@@ -17,6 +17,7 @@
 
 - ng g c clap --project drumkit -d
 - ng g c kick --project drumkit -d
+- ng build drumkit
 
 ```TypeScript
 import { Component, OnInit, Input } from "@angular/core";
