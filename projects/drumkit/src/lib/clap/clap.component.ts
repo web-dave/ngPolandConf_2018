@@ -28,6 +28,15 @@ import { Component, OnInit, Input } from "@angular/core";
           rgba(179, 180, 13, 1) 47%
         );
       }
+      div:active {
+        background: rgb(149, 154, 18);
+        background: radial-gradient(
+          circle,
+          rgba(149, 154, 18, 1) 0%,
+          rgba(238, 236, 20, 1) 14%,
+          rgba(179, 180, 13, 1) 27%
+        );
+      }
     `
   ]
 })

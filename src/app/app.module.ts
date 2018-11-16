@@ -3,7 +3,7 @@ import { NgModule } from "@angular/core";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { DrumkitModule } from "drumkit";
+import { DrumkitModule } from "projects/drumkit/src/public_api";
 
 @NgModule({
   declarations: [AppComponent],

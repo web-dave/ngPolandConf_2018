@@ -30,6 +30,15 @@ import { Component, OnInit, Input } from "@angular/core";
           #2f2f2e 68%
         );
       }
+      div:active {
+        background: rgb(75, 75, 73);
+        background: radial-gradient(
+          circle,
+          #131313 66%,
+          #7d7d7a 67%,
+          #2f2f8f 68%
+        );
+      }
     `
   ]
 })

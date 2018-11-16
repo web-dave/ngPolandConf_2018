@@ -1,5 +1,3 @@
-# NgPolandConf
-
 - ng new ngPolandConf
 
 - ng g library drumkit
